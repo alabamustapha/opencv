@@ -57,3 +57,43 @@ You should also install the following optional packages
 1. [pyautogui](https://pypi.org/project/PyAutoGUI/)
 2. [mediapipe](https://pypi.org/project/mediapipe/) (python 3.7, 3.9 required to use pip install mediapipe)
 3. [mime](https://pypi.org/project/mime/)
+
+### Test your environment
+
+From the environment, start the pyhton intepreter and enter the following to check the cv2 version installed
+
+1. `import cv2`
+2. `cv2.__version__`
+
+you should get an output with the installed cv2 version number e.g
+`'4.6.0'`
+
+### Test jupyter notebook is installed correctly 
+
+1. start a new session with `jupyter notebook` 
+2. create a new python 3 notebook
+3. test by import cv2 and checking the version 
+
+to close the session from cmd use `Cntrl + C`
+
+### Making the created environment available in jupyter always.
+
+This will allow us to use the created environment on the fly from jupyter without start a notebook from our environment.
+
+to achive this use this command from the environment:
+
+`python -m ipykernel install --user --name=opencv-env`
+
+You will get a confirmation message shouwing the name of the environment and the path it was installed.
+
+you can check also by starting jupyter and see the available options for creating a new python file.
+
+### Deactivating 
+
+when you are done working on your project, you should deactivate it by typing in the command from the environment 
+
+`deactivate`
+
+### You can use Anaconda
+
+### using PyCharm with created environment
